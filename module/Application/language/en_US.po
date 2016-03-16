@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TSS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-31 20:23-0300\n"
-"PO-Revision-Date: 2015-10-31 20:23-0300\n"
+"POT-Creation-Date: 2016-03-16 17:46-0300\n"
+"PO-Revision-Date: 2016-03-16 17:46-0300\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
 "Language-Team: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
 "Language: en_US\n"
@@ -13,78 +13,193 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;translate\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: module\n"
 "X-Poedit-SearchPath-1: config\n"
-"X-Poedit-SearchPathExcluded-0: vendor\n"
-"X-Poedit-SearchPathExcluded-1: data\n"
+"X-Poedit-SearchPath-2: vendor/tss\n"
+"X-Poedit-SearchPathExcluded-0: data\n"
 
 #: config/autoload/navigation.global.php:7
-#: module/Application/view/tss/auth/signin.phtml:8
-#: module/Application/view/tss/auth/signup.phtml:8
+#: module/Application/view/tss/authentication/signin.phtml:8
+#: module/Application/view/tss/authentication/signup.phtml:8
 msgid "Home"
 msgstr ""
 
-#: config/autoload/navigation.global.php:13
+#: config/autoload/navigation.global.php:23
+#: module/Application/view/tss/authentication/account/index.phtml:1
+#: module/Application/view/tss/authentication/account/index.phtml:3
+msgid "Profile"
+msgstr ""
+
+#: config/autoload/navigation.global.php:31
 msgid "Sign out"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:76
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AccountController.php:29
+msgid "Update"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AccountController.php:48
+msgid "Profile updated with success!"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AccountController.php:51
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:159
+msgid "Form with errors!"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:78
 msgid "Sign in with success!"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:80
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:82
 msgid "Username or password is invalid."
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Controller/AuthController.php:98
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:100
 msgid "You're disconected!"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Filter/SignupFilter.php:52
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:150
+msgid "Please, confirm your registration!"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:151
+msgid "Please, click the link to confirm your registration => "
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:155
+#, php-format
+msgid ""
+"An email has been sent to %s. Please, check your inbox and confirm your "
+"registration!"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:195
+msgid "Token invalid or you already confirmed this link."
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:205
+msgid "Email confirmed."
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:210
+msgid "Email already verified. Please login!"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/Fieldset/UserFiledsetFilter.php:57
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:52
 #, php-format
 msgid "The username %s already exists"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Filter/SignupFilter.php:97
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/Fieldset/UserFiledsetFilter.php:75
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:70
+msgid "Invalid email address"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/Fieldset/UserFiledsetFilter.php:85
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:80
+#, php-format
+msgid "The email %s already exists"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:127
 msgid "You must agree to the terms of use."
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:30
-#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:33
-#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:40
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:44
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:47
+msgid "First Name"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:57
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:60
+msgid "Last Name"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:70
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:73
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:30
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:33
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:38
+#: module/Application/view/tss/authentication/account/index.phtml:46
+#: module/Application/view/tss/authentication/account/index.phtml:47
 msgid "Username"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:43
-#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:46
-#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:53
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:83
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:86
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:51
+msgid "Email"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:96
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:43
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:46
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:64
+#: module/Application/view/tss/authentication/account/index.phtml:51
+#: module/Application/view/tss/authentication/account/index.phtml:52
 msgid "Password"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:55
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:109
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:112
+#: module/Application/view/tss/authentication/account/index.phtml:61
+msgid "Avatar"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:125
+msgid "Gender"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:128
+#: module/Application/view/tss/authentication/account/index.phtml:23
+msgid "Female"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:129
+#: module/Application/view/tss/authentication/account/index.phtml:23
+msgid "Male"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:140
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:143
+msgid "Birthday"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:153
+#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:156
+msgid "Bio"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:55
 msgid "Remember-me"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SigninForm.php:65
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:65
 msgid "Sign me in"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:66
-#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:69
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:77
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:80
 msgid "Confirm Password"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:78
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:89
 msgid "I have read and accepted the terms of use."
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Form/SignupForm.php:88
+#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:99
 msgid "Sign me up"
 msgstr ""
 
-#: module/TSS/Auth/src/TSS/Auth/Module.php:185
+#: vendor/tss/authentication/src/TSS/Authentication/Form/UserForm.php:43
+msgid "Submit"
+msgstr ""
+
+#: vendor/tss/authentication/src/TSS/Authentication/Module.php:187
 msgid "Please, sign in."
 msgstr ""
 
@@ -241,31 +356,43 @@ msgstr ""
 msgid "TSS Application"
 msgstr ""
 
-#: module/Application/view/tss/auth/layout/default.phtml:27
+#: module/Application/view/tss/authentication/account/index.phtml:35
+msgid "Update information"
+msgstr ""
+
+#: module/Application/view/tss/authentication/account/index.phtml:54
+msgid "Change password?"
+msgstr ""
+
+#: module/Application/view/tss/authentication/account/index.phtml:68
+msgid "Choose the file"
+msgstr ""
+
+#: module/Application/view/tss/authentication/layout/default.phtml:27
 msgid "TSS"
 msgstr ""
 
-#: module/Application/view/tss/auth/signin.phtml:2
+#: module/Application/view/tss/authentication/signin.phtml:2
 msgid "Sign in"
 msgstr ""
 
-#: module/Application/view/tss/auth/signin.phtml:29
+#: module/Application/view/tss/authentication/signin.phtml:29
 msgid "Forgotten password"
 msgstr ""
 
-#: module/Application/view/tss/auth/signin.phtml:40
+#: module/Application/view/tss/authentication/signin.phtml:40
 msgid "Don't have an account?"
 msgstr ""
 
-#: module/Application/view/tss/auth/signin.phtml:42
-#: module/Application/view/tss/auth/signup.phtml:2
+#: module/Application/view/tss/authentication/signin.phtml:42
+#: module/Application/view/tss/authentication/signup.phtml:2
 msgid "Sign up"
 msgstr ""
 
-#: module/Application/view/tss/auth/signup.phtml:32
+#: module/Application/view/tss/authentication/signup.phtml:33
 msgid "Already have an account?"
 msgstr ""
 
-#: module/Application/view/tss/auth/signup.phtml:34
+#: module/Application/view/tss/authentication/signup.phtml:35
 msgid "Please login"
 msgstr ""

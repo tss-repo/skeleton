@@ -1,9 +1,9 @@
 {
-  "name": "thiagosxsantos/tss-skeleton",
+  "name": "tss/skeleton",
   "type": "project",
   "description": "Skeleton Application for ZF2",
   "keywords": ["zf2", "framework", "skeleton"],
-  "homepage": "https://bitbucket.org/thiagosxsantos/tss-skeleton",
+  "homepage": "https://github.com/tss-repo/skeleton",
   "license": "MIT",
   "authors": [
     {
@@ -16,19 +16,19 @@
   "repositories": [
     {
       "type": "vcs",
-      "url":  "git@bitbucket.org:thiagosxsantos/tss-bootstrap.git"
+      "url":  "git@github.com:tss-repo/bootstrap.git"
     },
     {
       "type": "vcs",
-      "url":  "git@bitbucket.org:thiagosxsantos/tss-authentication.git"
+      "url":  "git@github.com:tss-repo/authentication.git"
     }
   ],
 
   "require": {
     "php": ">=5.5",
-    "zendframework/zendframework": "~2.5",
-    "doctrine/doctrine-orm-module": "~0.9",
-    "thiagosxsantos/tss-authentication": "dev-master"
+    "zendframework/zendframework": "^2.5",
+    "doctrine/doctrine-orm-module": "^0.9",
+    "tss/authentication": "dev-master"
   },
   "minimum-stability": "dev",
   "prefer-stable": true

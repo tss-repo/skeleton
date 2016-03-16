@@ -20,14 +20,16 @@ return array(
                 'privilege' => 'account',
                 'pages' => array(
                     array(
-                        'label' => _('<i class="fa fa-user fa-fw"></i> Profile'),
+                        'label' => _('Profile'),
+                        'addon-left' => '<i class="fa fa-user fa-fw"></i> ',
                         'route' => 'tssAuthentication/default',
                         'controller' => 'account',
                         'resource' => 'TSS\Authentication\Controller\Account',
                         'privilege' => 'index',
                     ),
                     array(
-                        'label' => _('<i class="fa fa-sign-out fa-fw"></i> Sign out'),
+                        'label' => _('Sign out'),
+                        'addon-left' => '<i class="fa fa-sign-out fa-fw"></i> ',
                         'route' => 'tssAuthentication/signout',
                         'resource' => 'TSS\Authentication\Controller\Auth',
                         'privilege' => 'signout',
