@@ -1,5 +1,10 @@
 <?php
 /**
+ * Default time zone
+ */
+date_default_timezone_set('America/Fortaleza');
+
+/**
  * Display all errors when APPLICATION_ENV is development.
  */
 if (isset($_SERVER['APPLICATION_ENV']) && $_SERVER['APPLICATION_ENV'] == 'development') {

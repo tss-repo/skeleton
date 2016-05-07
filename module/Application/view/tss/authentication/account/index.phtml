@@ -50,7 +50,7 @@
                     <div class="form-group">
                         <label class="control-label" for="password"><?php echo $this->translate('Password'); ?></label>
                         <input type="password" name="password" class="form-control" placeholder="<?php echo $this->translate('Password'); ?>" disabled value="password">
-                        <a href="<?php echo $this->url('application', array('controller' => 'conta', 'action' => 'mudar-senha')); ?>" class="help-block">
+                        <a href="<?php echo $this->url($routes['password-change']['name'], $routes['password-change']['params'], $routes['password-change']['options'], $routes['password-change']['reuseMatchedParams']); ?>" class="help-block">
                             <?php echo $this->translate('Change password?'); ?>
                         </a>
                     </div>

@@ -10,22 +10,52 @@ return [
             ],
             'routes' => [
                 'redirect' => [
-                    'name' => 'home'
+                    'name' => 'home',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
                 ],
                 'authenticate' => [
-                    'name' => 'tssAuthentication/authenticate'
+                    'name' => 'tssAuthentication/authenticate',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
                 ],
                 'confirm-email' => [
-                    'name' => 'tssAuthentication/confirm-email'
+                    'name' => 'tssAuthentication/confirm-email',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
                 ],
                 'signin' => [
-                    'name' => 'tssAuthentication/signin'
+                    'name' => 'tssAuthentication/signin',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
                 ],
                 'signout' => [
-                    'name' => 'tssAuthentication/signout'
+                    'name' => 'tssAuthentication/signout',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
                 ],
                 'signup' => [
-                    'name' => 'tssAuthentication/signup'
+                    'name' => 'tssAuthentication/signup',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
+                ],
+                'account' => [
+                    'name' => 'tssAuthentication/default',
+                    'params' => ['controller' => 'account'],
+                    'options' => [],
+                    'reuseMatchedParams' => false
+                ],
+                'password-change' => [
+                    'name' => 'tssAuthentication/default',
+                    'params' => ['controller' => 'account', 'action' => 'password-change'],
+                    'options' => [],
+                    'reuseMatchedParams' => false
                 ],
             ],
             'config' => [
@@ -34,6 +64,7 @@ return [
                 'credentialClass' => Application\Entity\Credential::class,
                 'credentialProperty' => 'value',
                 'credentialIdentityProperty' => 'user',
+                'credentialType' => Application\Entity\Credential::TYPE_PASSWORD,
                 'credential_callable' => function (Application\Entity\User $user, Application\Entity\Credential $credential) {
                     if ($user->getId() == $credential->getUser()->getId() && $user->isActive()) {
                         return true;
