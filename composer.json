@@ -1,9 +1,9 @@
 {
-  "name": "tss/skeleton",
+  "name": "zetta-code/tss-skeleton",
   "type": "project",
   "description": "Skeleton Application for ZF2",
   "keywords": ["zf2", "framework", "skeleton"],
-  "homepage": "https://github.com/tss-repo/skeleton",
+  "homepage": "https://github.com/zetta-code/tss-skeleton",
   "license": "MIT",
   "authors": [
     {
@@ -13,23 +13,10 @@
       "role": "Developer"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url":  "git@github.com:tss-repo/bootstrap.git"
-    },
-    {
-      "type": "vcs",
-      "url":  "git@github.com:tss-repo/authentication.git"
-    }
-  ],
-
   "require": {
     "php": ">=5.5",
     "zendframework/zendframework": "2.5.2",
     "doctrine/doctrine-orm-module": "^0.9",
-    "tss/authentication": "dev-master"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "zetta-code/tss-authentication": "^0.1"
+  }
 }
