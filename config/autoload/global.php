@@ -11,6 +11,25 @@
  * file.
  */
 
-return array(
-    // ...
-);
+return [
+    'mail' => [
+        'options' => [
+            'sender' => 'sendmail',
+            'from-email' => 'tss@bootstrap',
+            'from-name' => 'TSS',
+        ],
+        'transport' => [
+            'options' => [
+                'name' => 'localhost',
+                'host' => 'localhost',
+                'port' => '465',
+                'connection_class'  => 'login',
+                'connection_config' => [
+                    'username' => 'root',
+                    'password' => '',
+                    'ssl' => 'ssl'
+                ],
+            ],
+        ],
+    ],
+];

@@ -1,5 +1,5 @@
 <?php
-$title = $this->translate('Sign in');
+$title = $this->translate('Sign up');
 $this->headTitle($title);
 ?>
 
@@ -17,33 +17,18 @@ $this->headTitle($title);
         <?php echo $this->tssFlashMessenger(); ?>
         <?php echo $this->form()->openTag($form); ?>
         <fieldset>
-            <?php echo $this->tssFormRow($form->get('username')); ?>
-            <?php echo $this->tssFormRow($form->get('password')); ?>
-
-            <div class="row">
-                <div class="col-xs-6">
-                    <?php echo $this->tssFormRow($form->get('remember-me'), 'append'); ?>
-                </div>
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <a href="<?php echo $this->url($routes['recover']['name'], $routes['recover']['params'], $routes['recover']['options'], $routes['recover']['reuseMatchedParams']); ?>">
-                            <?php echo $this->translate('Forgotten password'); ?>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+            <?php echo $this->tssFormRow($form->get('email')); ?>
             <div class="row">
                 <div class="col-xs-6">
                     <!-- Change this to a button or input when using this as a form -->
                     <?php echo $this->formRow($form->get('submit')); ?>
                 </div>
                 <div class="col-xs-6">
-                    <div><?php echo $this->translate('Don\'t have an account?'); ?></div>
+                    <div><?php echo $this->translate('Already have an account?'); ?></div>
 
                     <strong>
-                        <a href="<?php echo $this->url($routes['signup']['name'], $routes['signup']['params'], $routes['signup']['options'], $routes['signup']['reuseMatchedParams']); ?>">
-                            <?php echo $this->translate('Sign up'); ?>
+                        <a href="<?php echo $this->url($routes['signin']['name'], $routes['signin']['params'], $routes['signin']['options'], $routes['signin']['reuseMatchedParams']); ?>">
+                            <?php echo $this->translate('Please login'); ?>
                         </a>
                     </strong>
                 </div>

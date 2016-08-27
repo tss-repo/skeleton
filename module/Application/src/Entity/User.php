@@ -1,17 +1,16 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Thiago
- * Date: 14/11/2015
- * Time: 10:16
+ * @link      http://github.com/zetta-repo/tss-skeleton for the canonical source repository
+ * @copyright Copyright (c) 2016 Zetta Code
  */
 
 namespace Application\Entity;
 
-
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use TSS\Authentication\Entity\AbstractUser;
+use TSS\Authentication\Entity\CredentialInterface;
+use TSS\Authentication\Entity\UserInterface;
 
 /**
  * User
@@ -92,5 +91,25 @@ class User extends AbstractUser
     public function setRole($role)
     {
         $this->role = $role;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRoleName()
+    {
+        if (!is_null($this->getRole())) {
+            return $this->getRole()->getName();
+        }
+
+        return '';
+    }
+
+    public static function checkPassword(UserInterface $user, CredentialInterface $credential) {
+        if ($user->getId() == $credential->getUser()->getId() && $user->isSignAllowed()) {
+            return true;
+        }
+
+        return false;
     }
 }

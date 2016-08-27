@@ -1,13 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Thiago
- * Date: 14/11/2015
- * Time: 10:17
+ * @link      http://github.com/zetta-repo/tss-skeleton for the canonical source repository
+ * @copyright Copyright (c) 2016 Zetta Code
  */
 
 namespace Application\Entity;
-
 
 use Doctrine\ORM\Mapping as ORM;
 use TSS\Authentication\Entity\AbstractRole;

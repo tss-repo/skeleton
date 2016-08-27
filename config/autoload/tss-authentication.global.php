@@ -1,14 +1,26 @@
 <?php
+/**
+ * @link      http://github.com/zetta-repo/tss-skeleton for the canonical source repository
+ * @copyright Copyright (c) 2016 Zetta Code
+ */
 
 return [
     'tss' => [
         'authentication' => [
             'layout' => 'tss/authentication/layout/default',
-            'template' => [
+            'templates' => [
+                'password-recover' => 'tss/authentication/password-recover',
+                'recover' => 'tss/authentication/recover',
                 'signin' => 'tss/authentication/signin',
-                'signup' => 'tss/authentication/signup',
+                'signup' => 'tss/authentication/signup'
             ],
             'routes' => [
+                'home' => [
+                    'name' => 'home',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
+                ],
                 'redirect' => [
                     'name' => 'home',
                     'params' => [],
@@ -23,6 +35,18 @@ return [
                 ],
                 'confirm-email' => [
                     'name' => 'tssAuthentication/confirm-email',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
+                ],
+                'password-recover' => [
+                    'name' => 'tssAuthentication/password-recover',
+                    'params' => [],
+                    'options' => [],
+                    'reuseMatchedParams' => false
+                ],
+                'recover' => [
+                    'name' => 'tssAuthentication/recover',
                     'params' => [],
                     'options' => [],
                     'reuseMatchedParams' => false
@@ -56,7 +80,7 @@ return [
                     'params' => ['controller' => 'account', 'action' => 'password-change'],
                     'options' => [],
                     'reuseMatchedParams' => false
-                ],
+                ]
             ],
             'config' => [
                 'identityClass' => Application\Entity\User::class,
@@ -65,26 +89,19 @@ return [
                 'credentialProperty' => 'value',
                 'credentialIdentityProperty' => 'user',
                 'credentialType' => Application\Entity\Credential::TYPE_PASSWORD,
-                'credential_callable' => function (Application\Entity\User $user, Application\Entity\Credential $credential) {
-                    if ($user->getId() == $credential->getUser()->getId() && $user->isActive()) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                },
+                'credential_callable' => 'Application\Entity\User::checkPassword',
                 'identityEmail' => 'email',
                 'identityActive' => false,
                 'roleClass' => Application\Entity\Role::class,
-                'roleDefault' => 2,
+                'roleDefault' => 2
             ],
 
             'acl' => [
-                'use_database_storage' => false,
                 'default_role' => 'Guest',
                 'roles' => [
                     'Guest' => null,
                     'Member' => ['Guest'],
-                    'Admin' => ['Member'],
+                    'Admin' => ['Member']
                 ],
                 'resources' => [
                     'allow' => [
@@ -92,27 +109,28 @@ return [
                             '' => ['Member']
                         ],
                         'TSS\Authentication\Controller\Account' => [
-                            '' => ['Member'],
+                            '' => ['Member']
                         ],
                         'TSS\Authentication\Controller\Auth' => [
                             'authenticate' => ['Guest'],
                             'confirm-email' => ['Guest'],
+                            'password-recover' => ['Guest'],
+                            'recover' => ['Guest'],
                             'signin' => ['Guest'],
                             'signout' => ['Guest'],
-                            'signup' => ['Guest'],
+                            'signup' => ['Guest']
                         ],
                         'TSS\Authentication\Menu' => [
                             'account' => ['Member']
-                        ],
+                        ]
                     ],
                     'deny' => [
                         'TSS\Authentication\Controller\Auth' => [
-                            'signup' => ['Member'],
-                        ],
+                            'signup' => ['Member']
+                        ]
                     ]
                 ]
             ]
-
         ]
     ]
 ];
