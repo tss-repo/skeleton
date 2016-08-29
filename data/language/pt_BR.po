@@ -1,74 +1,98 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TSS\n"
-"POT-Creation-Date: 2016-03-16 17:46-0300\n"
-"PO-Revision-Date: 2016-03-16 17:46-0300\n"
+"POT-Creation-Date: 2016-08-29 17:47-0300\n"
+"PO-Revision-Date: 2016-08-29 17:50-0300\n"
 "Last-Translator: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
 "Language-Team: Thiago S. Santos <thiagos.xsantos@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;translate\n"
-"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: module\n"
 "X-Poedit-SearchPath-1: config\n"
-"X-Poedit-SearchPath-2: vendor/tss\n"
+"X-Poedit-SearchPath-2: vendor/zetta-code\n"
 "X-Poedit-SearchPathExcluded-0: data\n"
 
-#: config/autoload/navigation.global.php:7
+#: config/autoload/navigation.global.php:11
+#: module/Application/view/tss/authentication/password-recover.phtml:8
+#: module/Application/view/tss/authentication/recover.phtml:8
 #: module/Application/view/tss/authentication/signin.phtml:8
 #: module/Application/view/tss/authentication/signup.phtml:8
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/password-recover.phtml:8
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/recover.phtml:8
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signin.phtml:8
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signup.phtml:8
 msgid "Home"
 msgstr "Início"
 
-#: config/autoload/navigation.global.php:23
+#: config/autoload/navigation.global.php:27
 #: module/Application/view/tss/authentication/account/index.phtml:1
 #: module/Application/view/tss/authentication/account/index.phtml:3
+#: module/Application/view/tss/authentication/account/password-change.phtml:1
+#: module/Application/view/tss/authentication/account/password-change.phtml:3
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:1
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:3
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:1
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:3
 msgid "Profile"
 msgstr "Perfil"
 
-#: config/autoload/navigation.global.php:31
+#: config/autoload/navigation.global.php:35
 msgid "Sign out"
 msgstr "Sair"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AccountController.php:29
+#: vendor/zetta-code/tss-authentication/src/Controller/AccountController.php:73
 msgid "Update"
 msgstr "Atualizar"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AccountController.php:48
+#: vendor/zetta-code/tss-authentication/src/Controller/AccountController.php:91
 msgid "Profile updated with success!"
 msgstr "Perfil atulizado com sucesso!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AccountController.php:51
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:159
+#: vendor/zetta-code/tss-authentication/src/Controller/AccountController.php:94
+#: vendor/zetta-code/tss-authentication/src/Controller/AccountController.php:139
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:226
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:321
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:383
 msgid "Form with errors!"
 msgstr "Formulário com erros!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:78
+#: vendor/zetta-code/tss-authentication/src/Controller/AccountController.php:133
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:379
+msgid "Your password has been changed successfully!"
+msgstr "Sua senha foi alterada com sucesso!"
+
+#: vendor/zetta-code/tss-authentication/src/Controller/AccountController.php:136
+msgid "Your current password is incorrect."
+msgstr "Sua senha está incorreta."
+
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:147
 msgid "Sign in with success!"
 msgstr "Entrou com sucesso!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:82
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:151
 msgid "Username or password is invalid."
 msgstr "Nome de usuário ou senha inválida."
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:100
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:167
 msgid "You're disconected!"
 msgstr "Você foi desconectado!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:150
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:217
 msgid "Please, confirm your registration!"
 msgstr "Por favor confirme seu registro!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:151
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:218
 msgid "Please, click the link to confirm your registration => "
 msgstr "Por favor, clique no link para confirmar seu registro =>"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:155
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:222
 #, php-format
 msgid ""
 "An email has been sent to %s. Please, check your inbox and confirm your "
@@ -77,294 +101,183 @@ msgstr ""
 "Um email foi enviado para %s. Por favor, verifique sua caixa de entrada e "
 "confirme seu registro!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:195
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:260
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:356
 msgid "Token invalid or you already confirmed this link."
 msgstr "Token inválido ou você já confirmou este link."
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:205
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:270
 msgid "Email confirmed."
 msgstr "Email confirmado."
 
-#: vendor/tss/authentication/src/TSS/Authentication/Controller/AuthController.php:210
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:275
 msgid "Email already verified. Please login!"
 msgstr "Email já verificado. Por favor, faça login!"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/Fieldset/UserFiledsetFilter.php:57
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:52
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:311
+msgid "Recover password!"
+msgstr "Recuperar senha!"
+
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:312
+msgid "Please, click the link to recover your password => "
+msgstr "Por favor, clique no link para recuperar sua senha =>"
+
+#: vendor/zetta-code/tss-authentication/src/Controller/AuthController.php:316
+#, php-format
+msgid ""
+"An email has been sent to %s. Please, check your inbox and recover your "
+"password!"
+msgstr ""
+"Um email foi enviado para %s. Por favor, verifique sua caixa de entrada e "
+"recupere sua senha!"
+
+#: vendor/zetta-code/tss-authentication/src/Filter/Fieldset/UserFiledsetFilter.php:54
+#: vendor/zetta-code/tss-authentication/src/Filter/SignupFilter.php:57
 #, php-format
 msgid "The username %s already exists"
 msgstr "O nome de usuário %s já existe"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/Fieldset/UserFiledsetFilter.php:75
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:70
+#: vendor/zetta-code/tss-authentication/src/Filter/Fieldset/UserFiledsetFilter.php:73
+#: vendor/zetta-code/tss-authentication/src/Filter/RecoverFilter.php:32
+#: vendor/zetta-code/tss-authentication/src/Filter/SignupFilter.php:76
 msgid "Invalid email address"
 msgstr "Email inválido"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/Fieldset/UserFiledsetFilter.php:85
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:80
+#: vendor/zetta-code/tss-authentication/src/Filter/Fieldset/UserFiledsetFilter.php:84
+#: vendor/zetta-code/tss-authentication/src/Filter/SignupFilter.php:87
 #, php-format
 msgid "The email %s already exists"
 msgstr "O email %s já existe"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Filter/SignupFilter.php:127
+#: vendor/zetta-code/tss-authentication/src/Filter/SignupFilter.php:136
 msgid "You must agree to the terms of use."
 msgstr "Você deve concordar com os termos de uso."
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:44
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:47
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:41
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:44
 msgid "First Name"
 msgstr "Nome"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:57
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:60
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:55
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:58
 msgid "Last Name"
 msgstr "Sobrenome"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:70
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:73
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:30
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:33
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:38
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:69
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:72
+#: vendor/zetta-code/tss-authentication/src/Form/SigninForm.php:27
+#: vendor/zetta-code/tss-authentication/src/Form/SigninForm.php:30
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:35
 #: module/Application/view/tss/authentication/account/index.phtml:46
 #: module/Application/view/tss/authentication/account/index.phtml:47
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:46
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:47
 msgid "Username"
 msgstr "Nome de usuário"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:83
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:86
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:51
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:83
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:86
+#: vendor/zetta-code/tss-authentication/src/Form/RecoverForm.php:28
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:49
 msgid "Email"
 msgstr "Email"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:96
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:43
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:46
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:64
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:97
+#: vendor/zetta-code/tss-authentication/src/Form/SigninForm.php:41
+#: vendor/zetta-code/tss-authentication/src/Form/SigninForm.php:44
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:63
 #: module/Application/view/tss/authentication/account/index.phtml:51
 #: module/Application/view/tss/authentication/account/index.phtml:52
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:51
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:52
 msgid "Password"
 msgstr "Senha"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:109
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:112
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:111
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:114
 #: module/Application/view/tss/authentication/account/index.phtml:61
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:61
 msgid "Avatar"
 msgstr "Foto"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:125
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:128
 msgid "Gender"
 msgstr "Gênero"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:128
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:132
 #: module/Application/view/tss/authentication/account/index.phtml:23
+#: module/Application/view/tss/authentication/account/password-change.phtml:23
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:23
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:23
 msgid "Female"
 msgstr "Feminino"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:129
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:133
 #: module/Application/view/tss/authentication/account/index.phtml:23
+#: module/Application/view/tss/authentication/account/password-change.phtml:23
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:23
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:23
 msgid "Male"
 msgstr "Masculino"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:140
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:143
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:143
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:146
 msgid "Birthday"
 msgstr "Data de Nascimento"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:153
-#: vendor/tss/authentication/src/TSS/Authentication/Form/Fieldset/UserFieldset.php:156
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:157
+#: vendor/zetta-code/tss-authentication/src/Form/Fieldset/UserFieldset.php:160
 msgid "Bio"
 msgstr "Bio"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:55
-msgid "Remember-me"
-msgstr "Lembrar-me"
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:27
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:30
+msgid "Current Password"
+msgstr "Senha Atual"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SigninForm.php:65
-msgid "Sign me in"
-msgstr "Conecte-me"
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:41
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:44
+msgid "New Password"
+msgstr "Senha Nova"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:77
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:80
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:55
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:58
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:77
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:80
 msgid "Confirm Password"
 msgstr "Repita a Senha"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:89
+#: vendor/zetta-code/tss-authentication/src/Form/PasswordChangeForm.php:69
+msgid "Change Password"
+msgstr "Mudar Senha"
+
+#: vendor/zetta-code/tss-authentication/src/Form/RecoverForm.php:42
+msgid "Recover password"
+msgstr "Recuperar senha"
+
+#: vendor/zetta-code/tss-authentication/src/Form/SigninForm.php:54
+msgid "Remember-me"
+msgstr "Lembrar-me"
+
+#: vendor/zetta-code/tss-authentication/src/Form/SigninForm.php:65
+msgid "Sign me in"
+msgstr "Conecte-me"
+
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:90
 msgid "I have read and accepted the terms of use."
 msgstr "Eu li e aceito os termos de uso."
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/SignupForm.php:99
+#: vendor/zetta-code/tss-authentication/src/Form/SignupForm.php:101
 msgid "Sign me up"
 msgstr "Registe-me"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Form/UserForm.php:43
+#: vendor/zetta-code/tss-authentication/src/Form/UserForm.php:40
 msgid "Submit"
 msgstr "Enviar"
 
-#: vendor/tss/authentication/src/TSS/Authentication/Module.php:187
+#: vendor/zetta-code/tss-authentication/src/Module.php:155
 msgid "Please, sign in."
 msgstr "Por favor, faça o login."
-
-#: module/Application/view/application/index/index.phtml:2
-#, php-format
-msgid "Welcome to %sZend Framework 2%s"
-msgstr "Bem vindo ao %sZend Framework 2%s"
-
-#: module/Application/view/application/index/index.phtml:3
-#, php-format
-msgid ""
-"Congratulations! You have successfully installed the %sZF2 Skeleton "
-"Application%s. You are currently running Zend Framework version %s. This "
-"skeleton can serve as a simple starting point for you to begin building your "
-"application on ZF2."
-msgstr ""
-"Parabéns! Você instalou a %sAplicação Skeleton ZF2%s com sucesso. Você está "
-"usando a versão %s do Zend Framework. Este esqueleto serve simplesmente como "
-"um ponto de inicio na construção da sua aplicação ZF2."
-
-#: module/Application/view/application/index/index.phtml:4
-msgid "Fork Zend Framework 2 on GitHub"
-msgstr "Replique Zend Framework 2 no GitHub"
-
-#: module/Application/view/application/index/index.phtml:12
-msgid "Follow Development"
-msgstr "Acompanhe o Desenvolvimento"
-
-#: module/Application/view/application/index/index.phtml:15
-#, php-format
-msgid ""
-"Zend Framework 2 is under active development. If you are interested in "
-"following the development of ZF2, there is a special ZF2 portal on the "
-"official Zend Framework website which provides links to the ZF2 %swiki%s, "
-"%sdev blog%s, %sissue tracker%s, and much more. This is a great resource for "
-"staying up to date with the latest developments!"
-msgstr ""
-"Zend Framework 2 está sob desenvolvimento ativo. Se vocês está interessado "
-"em acompanhar o desenvolvimento do ZF2, tem um portal ZF2 especial no site "
-"oficial do Zend Framework que possui links para ZF2 %swiki%s, %sdev blog%s, "
-"%sissue tracker%s, dentre outros. Este é um excelente material para se "
-"manter atualizado com os últimos desenvolvimentos!"
-
-#: module/Application/view/application/index/index.phtml:16
-msgid "ZF2 Development Portal"
-msgstr "Portal de Desenvolvimento do ZF2"
-
-#: module/Application/view/application/index/index.phtml:24
-msgid "Discover Modules"
-msgstr "Descubra Módulos"
-
-#: module/Application/view/application/index/index.phtml:27
-#, php-format
-msgid ""
-"The community is working on developing a community site to serve as a "
-"repository and gallery for ZF2 modules. The project is available %son GitHub"
-"%s. The site is currently live and currently contains a list of some of the "
-"modules already available for ZF2."
-msgstr ""
-"A Comunidade está trabalhando em desenvolver um site comunitário para servir "
-"como repositório e galeria de módulos ZF2. O projeto estará disponível %sem "
-"breve no GitHub%s. O site já está online e atualmente contém uma lista de "
-"alguns dos módulos já disponíveis para ZF2."
-
-#: module/Application/view/application/index/index.phtml:28
-msgid "Explore ZF2 Modules"
-msgstr "Explore Módulos ZF2"
-
-#: module/Application/view/application/index/index.phtml:36
-msgid "Help &amp; Support"
-msgstr "Help &amp; Support"
-
-#: module/Application/view/application/index/index.phtml:39
-#, php-format
-msgid ""
-"If you need any help or support while developing with ZF2, you may reach us "
-"via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
-"feedback you may have regarding the beta releases. Alternatively, you may "
-"subscribe and post questions to the %smailing lists%s."
-msgstr ""
-"Caso você precise de ajuda ou suporte enquanto desenvolve com ZF2, pode nos "
-"encontrar pelo %s#zftalk on Freenode%s. Vamos gostar muito de ouvir "
-"perguntas e opiniões que você possa ter em relação às versões beta. Também, "
-"você pode se registrar e enviar perguntar para a %slista de e-mail%s."
-
-#: module/Application/view/application/index/index.phtml:40
-msgid "Ping us on IRC"
-msgstr "Executar ping-nos no IRC"
-
-#: module/Application/view/error/404.phtml:1
-msgid "A 404 error occurred"
-msgstr "Ocorreu um erro de 404"
-
-#: module/Application/view/error/404.phtml:10
-msgid "The requested controller was unable to dispatch the request."
-msgstr "O controlador solicitado não foi capaz de despachar o pedido."
-
-#: module/Application/view/error/404.phtml:13
-msgid ""
-"The requested controller could not be mapped to an existing controller class."
-msgstr ""
-"O controlador solicitado não pode ser mapeado para uma classe de controlador "
-"existente."
-
-#: module/Application/view/error/404.phtml:16
-msgid "The requested controller was not dispatchable."
-msgstr "O controlador solicitado não foi despachável."
-
-#: module/Application/view/error/404.phtml:19
-msgid "The requested URL could not be matched by routing."
-msgstr "A URL solicitada não pode ser igualada por roteamento."
-
-#: module/Application/view/error/404.phtml:22
-msgid "We cannot determine at this time why a 404 was generated."
-msgstr "Não podemos determinar neste momento porque um 404 foi gerado."
-
-#: module/Application/view/error/404.phtml:34
-msgid "Controller"
-msgstr "Controlador"
-
-#: module/Application/view/error/404.phtml:41
-#, php-format
-msgid "resolves to %s"
-msgstr "resolve %s"
-
-#: module/Application/view/error/404.phtml:53
-#: module/Application/view/error/index.phtml:8
-msgid "Additional information"
-msgstr "Informações adicionais"
-
-#: module/Application/view/error/404.phtml:56
-#: module/Application/view/error/404.phtml:81
-#: module/Application/view/error/index.phtml:11
-#: module/Application/view/error/index.phtml:36
-msgid "File"
-msgstr "Arquivo"
-
-#: module/Application/view/error/404.phtml:60
-#: module/Application/view/error/404.phtml:85
-#: module/Application/view/error/index.phtml:15
-#: module/Application/view/error/index.phtml:40
-msgid "Message"
-msgstr "Mensagem"
-
-#: module/Application/view/error/404.phtml:64
-#: module/Application/view/error/404.phtml:89
-#: module/Application/view/error/index.phtml:19
-#: module/Application/view/error/index.phtml:44
-msgid "Stack trace"
-msgstr "Stack trace"
-
-#: module/Application/view/error/404.phtml:75
-#: module/Application/view/error/index.phtml:30
-msgid "Previous exceptions"
-msgstr "Excepções anteriores"
-
-#: module/Application/view/error/404.phtml:109
-#: module/Application/view/error/index.phtml:64
-msgid "No Exception available"
-msgstr "Sem Excepção disponível"
-
-#: module/Application/view/error/index.phtml:1
-msgid "An error occurred"
-msgstr "Ocorreu um erro"
 
 #: module/Application/view/layout/default/footer.phtml:5
 msgid "All rights reserved."
@@ -376,45 +289,203 @@ msgid "TSS Application"
 msgstr "TSS Application"
 
 #: module/Application/view/tss/authentication/account/index.phtml:35
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:35
 msgid "Update information"
 msgstr "Atualizar informação"
 
 #: module/Application/view/tss/authentication/account/index.phtml:54
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:54
 msgid "Change password?"
 msgstr "Mudar senha?"
 
 #: module/Application/view/tss/authentication/account/index.phtml:68
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/index.phtml:68
 msgid "Choose the file"
 msgstr "Selecione o arquivo"
 
+#: module/Application/view/tss/authentication/account/password-change.phtml:35
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:35
+msgid "Change password"
+msgstr "Mudar senha"
+
+#: module/Application/view/tss/authentication/account/password-change.phtml:49
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:49
+msgid "or"
+msgstr "ou"
+
+#: module/Application/view/tss/authentication/account/password-change.phtml:51
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/account/password-change.phtml:51
+msgid "back to profile"
+msgstr "voltar para perfil"
+
 #: module/Application/view/tss/authentication/layout/default.phtml:27
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/layout/default.phtml:27
 msgid "TSS"
 msgstr "TSS"
 
-#: module/Application/view/tss/authentication/signin.phtml:2
-msgid "Sign in"
-msgstr "Entrar"
-
-#: module/Application/view/tss/authentication/signin.phtml:29
-msgid "Forgotten password"
-msgstr "Esqueceu a Senha"
-
-#: module/Application/view/tss/authentication/signin.phtml:40
-msgid "Don't have an account?"
-msgstr "Ainda não possui uma conta?"
-
-#: module/Application/view/tss/authentication/signin.phtml:42
+#: module/Application/view/tss/authentication/password-recover.phtml:2
+#: module/Application/view/tss/authentication/recover.phtml:2
+#: module/Application/view/tss/authentication/signin.phtml:46
 #: module/Application/view/tss/authentication/signup.phtml:2
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/password-recover.phtml:2
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/recover.phtml:2
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signin.phtml:46
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signup.phtml:2
 msgid "Sign up"
 msgstr "Inscreva-se"
 
+#: module/Application/view/tss/authentication/password-recover.phtml:28
+#: module/Application/view/tss/authentication/recover.phtml:27
 #: module/Application/view/tss/authentication/signup.phtml:33
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/password-recover.phtml:28
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/recover.phtml:27
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signup.phtml:33
 msgid "Already have an account?"
 msgstr "Já tem uma conta?"
 
-#: module/Application/view/tss/authentication/signup.phtml:35
+#: module/Application/view/tss/authentication/password-recover.phtml:32
+#: module/Application/view/tss/authentication/recover.phtml:31
+#: module/Application/view/tss/authentication/signup.phtml:37
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/password-recover.phtml:32
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/recover.phtml:31
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signup.phtml:37
 msgid "Please login"
 msgstr "Por favor entre"
+
+#: module/Application/view/tss/authentication/signin.phtml:2
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signin.phtml:2
+msgid "Sign in"
+msgstr "Entrar"
+
+#: module/Application/view/tss/authentication/signin.phtml:30
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signin.phtml:30
+msgid "Forgotten password"
+msgstr "Esqueceu a Senha"
+
+#: module/Application/view/tss/authentication/signin.phtml:42
+#: vendor/zetta-code/tss-authentication/view/tss/authentication/signin.phtml:42
+msgid "Don't have an account?"
+msgstr "Ainda não possui uma conta?"
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Bem vindo ao %sZend Framework 2%s"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Parabéns! Você instalou a %sAplicação Skeleton ZF2%s com sucesso. Você "
+#~ "está usando a versão %s do Zend Framework. Este esqueleto serve "
+#~ "simplesmente como um ponto de inicio na construção da sua aplicação ZF2."
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Replique Zend Framework 2 no GitHub"
+
+#~ msgid "Follow Development"
+#~ msgstr "Acompanhe o Desenvolvimento"
+
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Zend Framework 2 está sob desenvolvimento ativo. Se vocês está "
+#~ "interessado em acompanhar o desenvolvimento do ZF2, tem um portal ZF2 "
+#~ "especial no site oficial do Zend Framework que possui links para ZF2 "
+#~ "%swiki%s, %sdev blog%s, %sissue tracker%s, dentre outros. Este é um "
+#~ "excelente material para se manter atualizado com os últimos "
+#~ "desenvolvimentos!"
+
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "Portal de Desenvolvimento do ZF2"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Descubra Módulos"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "A Comunidade está trabalhando em desenvolver um site comunitário para "
+#~ "servir como repositório e galeria de módulos ZF2. O projeto estará "
+#~ "disponível %sem breve no GitHub%s. O site já está online e atualmente "
+#~ "contém uma lista de alguns dos módulos já disponíveis para ZF2."
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Explore Módulos ZF2"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Help &amp; Support"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Caso você precise de ajuda ou suporte enquanto desenvolve com ZF2, pode "
+#~ "nos encontrar pelo %s#zftalk on Freenode%s. Vamos gostar muito de ouvir "
+#~ "perguntas e opiniões que você possa ter em relação às versões beta. "
+#~ "Também, você pode se registrar e enviar perguntar para a %slista de e-mail"
+#~ "%s."
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Executar ping-nos no IRC"
+
+#~ msgid "A 404 error occurred"
+#~ msgstr "Ocorreu um erro de 404"
+
+#~ msgid "The requested controller was unable to dispatch the request."
+#~ msgstr "O controlador solicitado não foi capaz de despachar o pedido."
+
+#~ msgid ""
+#~ "The requested controller could not be mapped to an existing controller "
+#~ "class."
+#~ msgstr ""
+#~ "O controlador solicitado não pode ser mapeado para uma classe de "
+#~ "controlador existente."
+
+#~ msgid "The requested controller was not dispatchable."
+#~ msgstr "O controlador solicitado não foi despachável."
+
+#~ msgid "The requested URL could not be matched by routing."
+#~ msgstr "A URL solicitada não pode ser igualada por roteamento."
+
+#~ msgid "We cannot determine at this time why a 404 was generated."
+#~ msgstr "Não podemos determinar neste momento porque um 404 foi gerado."
+
+#~ msgid "Controller"
+#~ msgstr "Controlador"
+
+#~ msgid "resolves to %s"
+#~ msgstr "resolve %s"
+
+#~ msgid "Additional information"
+#~ msgstr "Informações adicionais"
+
+#~ msgid "File"
+#~ msgstr "Arquivo"
+
+#~ msgid "Message"
+#~ msgstr "Mensagem"
+
+#~ msgid "Stack trace"
+#~ msgstr "Stack trace"
+
+#~ msgid "Previous exceptions"
+#~ msgstr "Excepções anteriores"
+
+#~ msgid "No Exception available"
+#~ msgstr "Sem Excepção disponível"
+
+#~ msgid "An error occurred"
+#~ msgstr "Ocorreu um erro"
 
 #~ msgid "bio"
 #~ msgstr "bio"
@@ -679,9 +750,6 @@ msgstr "Por favor entre"
 
 #~ msgid "Delete City"
 #~ msgstr "Excluir Cidade"
-
-#~ msgid "or"
-#~ msgstr "ou"
 
 #~ msgid "voltar para a lista"
 #~ msgstr "voltar para a lista"
