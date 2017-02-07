@@ -91,7 +91,7 @@ return [
                 'credentialType' => Application\Entity\Credential::TYPE_PASSWORD,
                 'credential_callable' => 'Application\Entity\User::checkPassword',
                 'identityEmail' => 'email',
-                'identityActive' => false,
+                'signAllowed' => false,
                 'roleClass' => Application\Entity\Role::class,
                 'roleDefault' => 2
             ],

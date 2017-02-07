@@ -8,7 +8,7 @@ namespace Application;
 
 class Module
 {
-    const VERSION = '3.0.0dev';
+    const VERSION = '3.0.1';
 
     public function getConfig()
     {

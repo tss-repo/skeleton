@@ -2,8 +2,8 @@
 /**
  * If you need an environment-specific system or application configuration,
  * there is an example in the documentation
- * @see http://framework.zend.com/manual/current/en/tutorials/config.advanced.html#environment-specific-system-configuration
- * @see http://framework.zend.com/manual/current/en/tutorials/config.advanced.html#environment-specific-application-configuration
+ * @see https://docs.zendframework.com/tutorials/advanced-config/#environment-specific-system-configuration
+ * @see https://docs.zendframework.com/tutorials/advanced-config/#environment-specific-application-configuration
  */
 
 return [
@@ -31,7 +31,7 @@ return [
         // Whether or not to enable a configuration cache.
         // If enabled, the merged configuration will be cached and used in
         // subsequent requests.
-        'config_cache_enabled' => false,
+        'config_cache_enabled' => true,
 
         // The key used to create the configuration cache file name.
         'config_cache_key' => 'application.config.cache',
@@ -39,7 +39,7 @@ return [
         // Whether or not to enable a module class map cache.
         // If enabled, creates a module class map cache which will be used
         // by in future requests, to reduce the autoloading process.
-        'module_map_cache_enabled' => false,
+        'module_map_cache_enabled' => true,
 
         // The key used to create the class map cache file name.
         'module_map_cache_key' => 'application.module.cache',
@@ -54,7 +54,7 @@ return [
     ],
 
     // Used to create an own service manager. May contain one or more child arrays.
-    //'service_listener_options' => [
+    // 'service_listener_options' => [
     //     [
     //         'service_manager' => $stringServiceManagerName,
     //         'config_key'      => $stringConfigKey,
