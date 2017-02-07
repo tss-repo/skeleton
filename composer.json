@@ -32,7 +32,6 @@
         "zfcampus/zf-development-mode": "^3.0",
         "zetta-code/tss-authentication": "^0.2.0"
     },
-    "require-dev": [],
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/"
