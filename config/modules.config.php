@@ -27,8 +27,8 @@ return [
     'Zend\Validator',
     'DoctrineModule',
     'DoctrineORMModule',
-    'TSS\Bootstrap',
-    'TSS\DoctrineUtil',
-    'TSS\Authentication',
+    'Zetta\ZendBootstrap',
+    'Zetta\DoctrineUtil',
+    'Zetta\ZendAuthentication',
     'Application',
 ];

@@ -17,25 +17,25 @@ return [
             'home' => [
                 'type' => Literal::class,
                 'options' => [
-                    'route'    => '/',
+                    'route' => '/',
                     'defaults' => [
                         'controller' => 'Application\Controller\Index',
-                        'action'     => 'index'
+                        'action' => 'index'
                     ]
                 ]
             ],
             'application' => [
-                'type'    => Segment::class,
+                'type' => Segment::class,
                 'options' => [
-                    'route'    => '/application[:controller[/:action]]',
+                    'route' => '/application[:controller[/:action]]',
                     'constraints' => [
                         'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'action'     => '[a-zA-Z][a-zA-Z0-9_-]*'
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                     ],
                     'defaults' => [
                         '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Application\Controller\Index',
-                        'action'        => 'index'
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'index'
                     ]
                 ]
             ]
@@ -43,7 +43,7 @@ return [
     ],
     'controllers' => [
         'aliases' => [
-            'Application\Controller\Index' =>  Controller\IndexController::class
+            'Application\Controller\Index' => Controller\IndexController::class
         ],
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class
@@ -54,7 +54,7 @@ return [
             'application_entities' => [
                 'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
                 'cache' => 'array',
-                'paths' => [__DIR__ . '/../src/Application/Entity']
+                'paths' => [__DIR__ . '/../src/Entity']
             ],
             'orm_default' => [
                 'drivers' => [
@@ -77,26 +77,28 @@ return [
         'locale' => 'pt_BR',
         'translation_file_patterns' => [
             [
-                'type'     => 'gettext',
+                'type' => 'gettext',
                 'base_dir' => __DIR__ . '/../../../data/language',
-                'pattern'  => '%s.mo',
+                'pattern' => '%s.mo',
             ],
         ]
     ],
     'view_manager' => [
         'display_not_found_reason' => true,
-        'display_exceptions'       => true,
-        'doctype'                  => 'HTML5',
-        'not_found_template'       => 'error/404',
-        'exception_template'       => 'error/index',
+        'display_exceptions' => true,
+        'doctype' => 'HTML5',
+        'not_found_template' => 'error/404',
+        'exception_template' => 'error/index',
         'template_map' => [
-            'layout/layout'           => __DIR__ . '/../view/layout/default/layout.phtml',
+            'layout/layout' => __DIR__ . '/../view/layout/default/layout.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml'
+            'error/layout' => __DIR__ . '/../view/error/layout.phtml',
+            'error/404' => __DIR__ . '/../view/error/404.phtml',
+            'error/403' => __DIR__ . '/../view/error/403.phtml',
+            'error/index' => __DIR__ . '/../view/error/index.phtml'
         ],
         'template_path_stack' => [
             __DIR__ . '/../view'
         ]
-    ],
+    ]
 ];

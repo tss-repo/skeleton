@@ -34,6 +34,7 @@ class TranslatorDelegator implements DelegatorFactoryInterface
         );
 
         AbstractValidator::setDefaultTranslator($translator);
+        \Locale::setDefault($translator->getLocale());
 
         return $translator;
     }
