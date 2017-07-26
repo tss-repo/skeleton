@@ -18,12 +18,12 @@ use Zetta\ZendAuthentication\Entity\RoleInterface;
  */
 class Role extends AbstractEntity implements RoleInterface
 {
-    const ID_ADMIN          = 1;
-    const ID_MEMBER         = 2;
+    const ID_ADMIN = 1;
+    const ID_MEMBER = 2;
 
-    const ADMIN             = 'Admin';
-    const MEMBER            = 'Member';
-    const GUEST             = 'Guest';
+    const ADMIN = 'Admin';
+    const MEMBER = 'Member';
+    const GUEST = 'Guest';
 
     /**
      * @var int

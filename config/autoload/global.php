@@ -23,7 +23,7 @@ return [
                 'name' => 'localhost',
                 'host' => 'localhost',
                 'port' => '465',
-                'connection_class'  => 'login',
+                'connection_class' => 'login',
                 'connection_config' => [
                     'username' => 'root',
                     'password' => '',
@@ -32,4 +32,11 @@ return [
             ],
         ],
     ],
+    'zend-boostrap' => [
+        'thumbnail' => [
+            'defaultPath' => './public/img/thumb.png',
+            'width' => 128,
+            'height' => 128
+        ],
+    ]
 ];

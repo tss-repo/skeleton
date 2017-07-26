@@ -15,6 +15,7 @@ data/cache/*
 !data/cache/.gitkeep
 data/sessions/*
 data/tmp/*
+data/uploads/*
 temp/*
 
 #Doctrine 2
